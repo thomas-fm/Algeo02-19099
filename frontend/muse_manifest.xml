@@ -1,11 +1,11 @@
-<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="abcde.com" resolutions="1x" timestamp="1605005581719">
+<manifest alg="2" build="2018.1.1.386" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="abcde.com" resolutions="1x" timestamp="1605007173845">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="master_master-back-pranala.css" crc="74800378" ref="cara-penggunaan:tentang-kami:konsep-singkat"/>
     <file name="master_master-header-footer.css" crc="383852613" ref="upload-file:search-page:result-page:pranala:buka-dokumen:index"/>
     <file name="cara-penggunaan.css" crc="4004917615" ref="cara-penggunaan"/>
     <file name="tentang-kami.css" crc="114434439" ref="tentang-kami"/>
-    <file name="upload-file.css" crc="3876681045" ref="upload-file"/>
+    <file name="upload-file.css" crc="3864871622" ref="upload-file"/>
     <file name="search-page.css" crc="3994567708" ref="search-page"/>
     <file name="result-page.css" crc="95395085" ref="result-page"/>
     <file name="pranala.css" crc="101679763" ref="pranala"/>
@@ -61,7 +61,7 @@
   <file name="konsep-singkat.html" crc="217554484" seo="true" mt="1605003899685" redirect="true"/>
   <file name="cara-penggunaan.html" crc="381961094" seo="true" mt="1605003899685" redirect="true"/>
   <file name="tentang-kami.html" crc="186593162" seo="true" mt="1605003899685" redirect="true"/>
-  <file name="upload-file.html" crc="3821672231" seo="true" mt="1605004941953" redirect="true"/>
+  <file name="upload-file.html" crc="4080189372" seo="true" mt="1605007051350" redirect="true"/>
   <file name="search-page.html" crc="76582352" seo="true" mt="1605004960161" redirect="true"/>
   <file name="result-page.html" crc="3888357478" seo="true" mt="1605004531061" redirect="true"/>
   <file name="buka-dokumen.html" crc="4276252401" seo="true" mt="1605004608172" redirect="true"/>
