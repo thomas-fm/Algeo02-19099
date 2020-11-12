@@ -54,6 +54,7 @@ body {
   }
 }
 
+/* style uploader */
 .input[type=file]{
   background-color: rgb(179, 179, 179);
   border: none;
@@ -62,16 +63,18 @@ body {
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .input[type=submit]{
   background-color: rgb(179, 179, 179);
   border: none;
   color: black;
-  padding: 16px 32px;
+  padding: 19px 32px;
   text-decoration: none;
   margin: 4px 2px;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .input:hover{
@@ -79,12 +82,48 @@ body {
   color: white;
 }
 
-.center {
+.centeruploader {
   margin: 0;
   position: absolute;
-  left: 50%;
+  left: 45%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.centersubmit {
+  margin: 0;
+  position: absolute;
+  left: 61%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* style button */
+.buttonlanjut {
+  background-color:transparent;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Overpass', sans-serif;
+  font-weight: lighter;
+}
+
+.buttonlanjut:hover{
+  color: rgb(124, 124, 124);
+}
+
+.centerbutton{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 /* footer sytyle */
@@ -107,13 +146,16 @@ footer {
       </div>
     <!--body-->
     <div>
-      <p style="padding: 90px;"></p>
+      <p style="padding: 75px;"></p>
       <p style="font-size: 35px; font-weight: normal;margin: auto;text-align: center;">Unggah dokumen disini</p>
       <p style="padding: 1px;"></p>
-      <input class="input center" type="file" multiple>
-      <p style="padding: 29.5px;"></p>
-      <input class="input center" type="submit">
-      <p style="padding: 110px;"></p>
+      <div>
+        <input class="input centeruploader" type="file" multiple>
+        <input class="input centersubmit" type="submit">
+      </div>
+      <p style="padding: 54.5px;"></p>
+      <button type="button" class="buttonlanjut centerbutton" onclick="alert('ini nanti di link ke search.html')">Halaman berikutnya  ></button>
+      <p style="padding: 100px;"></p>
     </div> 
 </body>
 <footer>
