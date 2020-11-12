@@ -54,37 +54,37 @@ body {
   }
 }
 
-.input[type=file]{
-  background-color: rgb(179, 179, 179);
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
+/* style form */
+form.search input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.search button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: rgb(179, 179, 179);
+  color:black;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
   cursor: pointer;
 }
 
-.input[type=submit]{
-  background-color: rgb(179, 179, 179);
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-decoration: none;
-  margin: 4px 2px;
-  cursor: pointer;
+form.search button:hover {
+  background: rgb(77, 77, 77);
+  color:white;
 }
 
-.input:hover{
-  background-color: rgb(77, 77, 77);
-  color: white;
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+form.search::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* footer sytyle */
@@ -107,13 +107,14 @@ footer {
       </div>
     <!--body-->
     <div>
-      <p style="padding: 100px;"></p>
-      <p style="font-size: 35px; font-weight: normal;margin: auto;text-align: center;">Unggah dokumen disini</p>
-      <p style="padding: 1px;"></p>
-      <input class="input center" type="file" multiple>
-      <p style="padding: 29.5px;"></p>
-      <input class="input center" type="submit">
-      <p style="padding: 100px;"></p>
+      <p style="padding: 110px;"></p>
+      <p style="font-size: 35px; font-weight: normal;margin: auto;text-align: center;">Masukkan query yang ingin dicari</p>
+      <p style="padding: inherit;"></p>
+      <form class="search" action="/action_page.php" style="margin:auto;max-width:500px">
+        <input type="text" placeholder="Search.." name="search2">
+        <button type="submit">Go</button>
+      </form>
+      <p style="padding: 107.5px;"></p>
     </div> 
 </body>
 <footer>

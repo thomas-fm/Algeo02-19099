@@ -1,81 +1,115 @@
 <!DOCTYPE html>
-<html class="nojs html css_verticalspacer" lang="en-US">
- <head>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;600&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
 
-  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
-  <meta name="generator" content="2018.1.1.386"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+body { 
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #777;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
   
-  <script type="text/javascript">
-   // Update the 'nojs'/'js' class on the html node
-document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+  .header-right {
+    float: none;
+  }
+}
 
-// Check that all required assets are uploaded and up-to-date
-if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.watch.js", "require.js", "index.css"], "outOfDate":[]};
-</script>
-  
-  <title>Home</title>
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=444006867"/>
-  <link rel="stylesheet" type="text/css" href="css/master_master-header-footer.css?crc=383852613"/>
-  <link rel="stylesheet" type="text/css" href="css/index.css?crc=3908781526" id="pagesheet"/>
-   </head>
- <body>
+/* button style */
+.button{
+    background-color:  rgb(179, 179, 179);
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Overpass', sans-serif;
+}
+.button:hover {
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
-  <div class="clearfix borderbox" id="page"><!-- group -->
-   <div class="clearfix grpelem" id="ppu470"><!-- column -->
-    <div class="clearfix colelem" id="pu470"><!-- group -->
-     <div class="browser_width grpelem" id="u470-bw">
-      <div id="u470"><!-- group -->
-       <div class="clearfix" id="u470_align_to_page">
-        <a class="nonblock nontext grpelem" id="u471-4" href="pranala.html"><!-- rasterized frame --><img id="u471-4_img" alt="pranala" src="images/u471-4.png?crc=3981783027" data-image-width="72"/></a>
-       </div>
+/* footer sytyle */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>    
+<body style="background-color: rgba(238, 238, 238, 0.986);">
+    <!--header-->
+    <div class="header">
+        <a href="#index" class="logo">ABCDE</a>
+        <div class="header-right">
+          <a href="#pranala">Pranala</a>
+        </div>
       </div>
-     </div>
-     <a class="nonblock nontext MuseLinkActive grpelem" id="u472" href="index.html"><!-- state-based BG images --><div id="u472_states"><img alt="ABCDE" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div></a>
-    </div>
-    <img class="colelem" id="u533-4" alt="Temuilah mesin pencarian sederhana terbaru kami" src="images/u533-4.png?crc=3961375836" data-image-width="447"/><!-- rasterized frame -->
-    <img class="colelem" id="u773-4" alt="ABCDE Search Engine" src="images/u773-4.png?crc=3937449213" data-image-width="516"/><!-- rasterized frame -->
-    <a class="nonblock nontext Button clearfix colelem" id="buttonu776" href="upload-file.html" data-visibility="changed" style="visibility:hidden"><!-- container box --><div class="grpelem" id="u777"><!-- state-based BG images --><img alt="Mulai Pencarian" src="images/blank.gif?crc=4208392903"/><div class="fluid_height_spacer"></div></div></a>
-   </div>
-   <div class="verticalspacer" data-offset-top="348" data-content-above-spacer="348" data-content-below-spacer="62" data-sizePolicy="fixed" data-pintopage="page_fixedLeft"></div>
-   <div class="browser_width grpelem" id="u464-bw">
-    <div id="u464"><!-- group -->
-     <div class="clearfix" id="u464_align_to_page">
-      <img class="grpelem" id="u465-4" alt="© 2020 by ABCDE" src="images/u465-4.png?crc=500377470" data-image-width="143"/><!-- rasterized frame -->
-     </div>
-    </div>
-   </div>
-  </div>
-  <div class="preload_images">
-   <img class="preload" src="images/u472_states-a.png?crc=528542667" alt=""/>
-   <img class="preload" src="images/u777-r.png?crc=4133343573" alt=""/>
-  </div>
-  <!-- Other scripts -->
-  <script type="text/javascript">
-   // Decide whether to suppress missing file error or not based on preference setting
-var suppressMissingFileError = false
-</script>
-  <script type="text/javascript">
-   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
-16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
-k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
-g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
-setTimeout(function(){f(!0)},5E3):f()}};
-var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.watch"],function(c){var $ = c;$(document).ready(function(){try{
-window.Muse.assets.check($);/* body */
-Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
-Muse.Utils.prepHyperlinks(true);/* body */
-Muse.Utils.resizeHeight('.browser_width');/* resize height */
-Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
-Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
-Muse.Utils.fullPage('#page');/* 100% height page */
-Muse.Utils.showWidgetsWhenReady();/* body */
-Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
-}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
-
-</script>
-  <!-- RequireJS script -->
-  <script src="scripts/require.js?crc=4177726516" type="text/javascript" async data-main="scripts/museconfig.js?crc=3936894949" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
-   </body>
+    <!--body-->
+    <div style="color:black;padding:20px;">
+        <p style="padding: 80px;"></p>
+        <p style="margin: auto;text-align: center;font-size: 30px;font-weight: 100;">temuilah mesin pencarian sederhana terbaru kami</p>
+        <p style="margin: auto;text-align: center;font-size: 50px;font-weight: bold;">ABCDE Search Engine</p>
+        <p style="padding: 10px;"></p>
+        <button type="button" class="button center" onclick="alert('ini nanti di link ke upload-file.html')">Mulai Pencarian</button>
+        <p style="padding: 100px;"></p>
+      </div> 
+    </body>
+<footer>
+    <p>©2020 by ABCDE</p>
+</footer>
 </html>
