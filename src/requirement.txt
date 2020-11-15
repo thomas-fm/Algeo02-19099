@@ -20,7 +20,6 @@ PySastrawi==1.2.0
 python-dateutil==2.8.1
 python-dotenv==0.15.0
 pytz==2020.4
-Sastrawi==1.0.1
 six==1.15.0
 soupsieve==2.0.1
 toml==0.10.2

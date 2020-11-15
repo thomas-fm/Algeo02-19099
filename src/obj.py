@@ -100,31 +100,18 @@ class Query:
     stemQuery = calculation.stemText(self.query)
     self.vektor_query = calculation.token(stemQuery)
     
-    vektor_q = []
-    self.count_query = [0 for i in range(len(vektor_q))]
+    vektor_q = self.vektor_query
+    self.vektor_query = list(dict.fromkeys(vektor_q))
+
+    self.count_query = [0 for i in range(len(self.vektor_query))]
     first = True
     
-    for i in range(0, len(self.vektor_query)):
-      ada = False
-
-      if first:
-        first = False
-        vektor_q.append(self.vektor_query[i])
-        self.count_query.append(1)
-
-      else:
-        for j in range(0, len(vektor_q)):
-          if self.vektor_query[i] == vektor_q[j]:
-            ada = True
-            self.count_query[j] += 1
-            break
-          if not ada:
-            vektor_q.append(self.vektor_query[i])
-            
-            self.count_query.append(1)
-            # print(self.count_query)
-    self.vektor_query = vektor_q
-  
+    for i in range (0, len(self.vektor_query)):
+      for j in range (0, len(vektor_q)):
+        if (vektor_q[j] == self.vektor_query[i]):
+          self.count_query[i] += 1
+    
+    print(self.vektor_query)
   # Mencari jumlah kemunculan query pada tiap dokumen
   def countQuery(self, dfdatabase):
     self.count_words_query = [0 for i in range(len(dfdatabase))]

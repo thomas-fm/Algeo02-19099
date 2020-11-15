@@ -122,9 +122,9 @@ def proses_file():
     if request.method == 'POST':
         text = request.form['text']
 
-        if text == '':
+        if text == '' or text==None:
             flash("No text")
-            return redirect(request.url)
+            return render_template('search.html')
 
         
         """ MASUKKAN QUERY KE DATABASE """
