@@ -145,7 +145,7 @@ class Query:
       arrQ = [0 for i in range (len(self.vektor_query))]
 
       # Hitung similarity dan append ke dfQ
-      cos_sim = calculation.cosineSimilarity(self.count_words_query, arr)
+      cos_sim = round(calculation.cosineSimilarity(self.count_words_query, arr), 2)
       row['cos_sim'] = cos_sim
       
       array_cos.append(cos_sim)
