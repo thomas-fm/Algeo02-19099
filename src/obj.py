@@ -104,7 +104,6 @@ class Query:
     self.vektor_query = list(dict.fromkeys(vektor_q))
 
     self.count_query = [0 for i in range(len(self.vektor_query))]
-    first = True
     
     for i in range (0, len(self.vektor_query)):
       for j in range (0, len(vektor_q)):
