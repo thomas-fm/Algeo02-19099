@@ -10,9 +10,9 @@ Cek versi dari python dan pip
 python --version
 pip --version
 ```
-Apabila belum terinstall maka install terlebih dahulu python dan pip
-Visit https://www.python.org/downloads/
-Visit https://pip.pypa.io/en/stable/installing/
+Apabila belum terinstall maka install terlebih dahulu python dan pip___
+Visit https://www.python.org/downloads/ ___
+Visit https://pip.pypa.io/en/stable/installing/ ___
 
 ### Install virtual environment
 ```bash
@@ -24,11 +24,12 @@ pip install virtualenv
 git clone https://github.com/thomas-fm/Algeo02-19099.git
 ```
 
-### Masuk ke folder src dan buat virtual environment baru
+### Buat virtual environment baru
+Masuk ke folder src
 ```bash
 cd src
 ```
-Pastikan sudah di /src/
+Pastikan sudah di /src/ lalu buat env
 ```bash
 virtualenv env
 ```
@@ -43,7 +44,8 @@ source env/bin/activate
 env\Scripts\activate
 ```
 
-### Lalu jalankan web
+### Jalankan web
+Menjalankan web secara lokal
 ```bash
 flask run
 ```
