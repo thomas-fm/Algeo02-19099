@@ -1,4 +1,3 @@
-# Algeo02-19099
 # ABCDE SEARCH-ENGINE
 > Search engine berbasis web memanfaatkan aplikasi dot product
 
@@ -54,8 +53,18 @@ Install library-library yang dibutuhkan
 pip install -r requirement.txt
 ```
 
-### Jalankan web
+### Jalankan flask
 Menjalankan web secara lokal
 ```bash
 flask run
 ```
+### Buka web
+Biasanya web akan terbuka pada port 5000, buka link berikut
+```bash
+http://127.0.0.1:5000/
+```
+Apabila tidak bisa dibuka, salin link dari yang muncul pada cli
+```bash
+Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+```
+Begini tampilan cli yang terlihat
