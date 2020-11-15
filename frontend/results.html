@@ -91,6 +91,25 @@ form.search::after {
   display: table;
 }
 
+.center{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* table style */
+table {
+  border: 1px solid black;
+  text-align: left;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 /* footer sytyle */
 footer {
   background-color: #777;
@@ -106,18 +125,46 @@ footer {
     <div class="header">
         <a href="#index" class="logo">ABCDE</a>
         <div class="header-right">
-          <a href="#pranala">Pranala</a>
+          <a href="#perihal">Perihal</a>
         </div>
       </div>
     <!--body-->
+    <!--searchbar-->
+    <p style="padding: 15px;"></p>
     <div>
       <p style="padding: inherit;"></p>
       <form class="search" action="/action_page.php" style="margin:auto;max-width:500px">
         <input type="text" placeholder="Cari.." name="search2">
         <button type="submit">Pergi</button>
       </form>
-      <p style="padding: 107.5px;"></p>
     </div> 
+    <!--hasil pencarian-->
+    <div>
+      <p style="padding: 7px;"></p>
+      <p style="margin: auto;text-align: center;font-size: 30px;font-weight: 100;">Hasil Pencarian</p>
+      <div> <!--padding atas + tabel per dokumen-->
+        <p style="padding: 25px;"></p>
+        <table class="center">
+          <tr>
+            <td>"judul_dokumen"</td>
+          </tr>
+          <tr>
+            <th>Jumlah Kata</th>
+            <td>:</td>  
+            <td>"jumlah_kata"</td>      
+          </tr>  
+          <tr>
+            <th>Tingkat Kemiripan</th>
+            <td>:</td>
+            <td>"tingkat_kemiripan" %</td>
+          </tr>
+          <tr>
+            <td>"kalimat_pertama"</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p style="padding: 158px;"></p>
 </body>
 <footer>
     <p>©2020 by ABCDE</p>

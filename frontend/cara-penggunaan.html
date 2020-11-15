@@ -58,7 +58,7 @@ body {
     background-color:  rgb(179, 179, 179);
     border: none;
     color: black;
-    padding: 16px 32px;
+    padding: 25px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -68,6 +68,7 @@ body {
     cursor: pointer;
     border-radius: 12px;
     font-family: 'Overpass', sans-serif;
+    width: 300px;
 }
 .button:hover {
   background-color: rgb(77, 77, 77);
@@ -79,6 +80,22 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+/* paragraf style */
+.paragraf {
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 1.5px;
+    text-indent: 105px;
+}
+
+/* list */
+.list {
+    max-width: 72%;
+    margin: 0 auto;
+    font-size: large;
 }
 
 /* footer sytyle */
@@ -101,12 +118,28 @@ footer {
       </div>
     <!--body-->
     <div style="color:black;padding:20px;">
-        <p style="padding: 73px;"></p>
-        <p style="margin: auto;text-align: center;font-size: 30px;font-weight: 100;">temuilah mesin pencarian sederhana terbaru kami</p>
-        <p style="margin: auto;text-align: center;font-size: 66px;font-weight: bold;">ABCDE Search Engine</p>
-        <p style="padding: 10px;"></p>
-        <button type="button" class="button center" onclick="alert('ini nanti di link ke upload-file.html')">Mulai Pencarian</button>
-        <p style="padding: 97px;"></p>
+        <p style="padding: 27px;"></p>
+        <p style="margin: auto;text-align: center;font-size: 30px;font-weight: 100;">CARA PENGGUNAAN</p>
+        <p style="padding: 3px;"></p>
+        <div style="background-color: rgb(218, 218, 218); max-width: 50%; margin: 0 auto; padding-top: 1.7%; padding-bottom: 5%;">
+            <p class="paragraf">Cara penggunaan mesin pencarian kami adalah sebagai berikut :</p>
+            <ol class="list">
+                <li>Klik tombol mulai.</li>
+                <p></p>
+                <li>Klik choose file dan masukkan dokumen yang ingin dihitung kemiripannya, pastikan ekstensi file berupa txt atau html, lalu klik submit.</li>
+                <p></p>
+                <li>Pastikan dokumen yang di upload sudah lebih dari 15 untuk melanjutkan ke halaman selanjutnya.</li>
+                <p></p>
+                <li>Klik halaman selanjutnya, lalu masukan query.</li>
+                <p></p>
+                <li>Anda akan diarahkan ke halaman berisi informasi tekait dokumen yang sebelumnya Anda input, info meliputi tingkat kemiripan dengan query.</li>
+                <p></p>
+                <li>Dokumen yang telah diupload dapat dibuka dengan cara mengklik judul dokumen.</li>
+                <p></p>
+                <li>Masukkan query dapat dilakukan berulang-ulang, asalkan pengguna tidak mengarahkan web ke halaman index, karena pengguna harus meng-upload ulang dokumen-dokumen yang ingin di upload.</li>
+            </ol>
+        </div>
+        <p style="padding: 40px;"></p>
       </div> 
     </body>
 <footer>
