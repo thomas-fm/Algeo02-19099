@@ -10,9 +10,9 @@ Cek versi dari python dan pip
 python --version
 pip --version
 ```
-Apabila belum terinstall maka install terlebih dahulu python dan pip___
-Visit https://www.python.org/downloads/ ___
-Visit https://pip.pypa.io/en/stable/installing/ ___
+Apabila belum terinstall maka install terlebih dahulu python dan pip \
+Visit https://www.python.org/downloads/ \
+Visit https://pip.pypa.io/en/stable/installing/ \
 
 ### Install virtual environment
 ```bash
