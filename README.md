@@ -44,19 +44,19 @@ env\Scripts\activate
 ```
 Lalu command line akan terlihat seperti ini
 ```bash
-(env) path/to/repo/Algeo02-19099/src
+$ (env) path/to/repo/Algeo02-19099/src
 ```
 
 ## Install library
 Install library-library yang dibutuhkan
 ```bash
-pip install -r requirement.txt
+$ (env) path/to/repo/Algeo02-19099/src>pip install -r requirement.txt
 ```
 
 ### Jalankan flask
 Menjalankan web secara lokal
 ```bash
-flask run
+$ (env) path/to/repo/Algeo02-19099/src>flask run
 ```
 ### Buka web
 Biasanya web akan terbuka pada port 5000, buka link berikut
