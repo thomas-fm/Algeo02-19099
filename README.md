@@ -12,7 +12,7 @@ pip --version
 ```
 Apabila belum terinstall maka install terlebih dahulu python dan pip \
 Visit https://www.python.org/downloads/ \
-Visit https://pip.pypa.io/en/stable/installing/ \
+Visit https://pip.pypa.io/en/stable/installing/ 
 
 ### Install virtual environment
 ```bash
