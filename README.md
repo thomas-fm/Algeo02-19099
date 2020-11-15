@@ -43,6 +43,16 @@ source env/bin/activate
 ```bash
 env\Scripts\activate
 ```
+Lalu command line akan terlihat seperti ini
+```bash
+(env) path/to/repo/Algeo02-19099/src
+```
+
+## Install library
+Install library-library yang dibutuhkan
+```bash
+pip install -r requirement.txt
+```
 
 ### Jalankan web
 Menjalankan web secara lokal
