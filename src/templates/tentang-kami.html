@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@200;600&display=swap" rel="stylesheet">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: 'Overpass', sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #777;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+/* button style */
+.button{
+    background-color:  rgb(179, 179, 179);
+    border: none;
+    color: black;
+    padding: 25px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Overpass', sans-serif;
+    width: 300px;
+}
+.button:hover {
+  background-color: rgb(77, 77, 77);
+  color: white;
+}
+.center{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/* paragraf style */
+.paragraf {
+    max-width: 35%;
+    font-size: large;
+    text-align: justify;
+    text-justify: inter-word;
+    word-spacing: 1.5px;
+}
+
+/* list */
+.list {
+    max-width: 72%;
+    margin: 0 auto;
+    font-size: large;
+}
+
+/* footer sytyle */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+</style>
+</head>    
+<body style="background-color: rgba(238, 238, 238, 0.986);">
+    <!--header-->
+    <div class="header">
+      <a href="{{ url_for('index') }}" class="logo">ABCDE</a>
+      <div class="header-right">
+        <a href="{{ url_for('perihal')}}">Perihal</a>
+        </div>
+      </div>
+    <!--body-->
+    <div style="color:black;padding:20px;">
+        <p style="padding: 27px;"></p>
+        <p style="margin: auto;text-align: center;font-size: 30px;font-weight: 100;">TENTANG KAMI</p>
+        <p style="padding: 3px;"></p>
+        <div style="background-color: rgb(218, 218, 218); max-width: 50%; margin: 0 auto; padding-top: 5%; padding-bottom: 5%;">
+            <p style="padding: 3px;"></p>
+            <p class="paragraf center">
+                ABCDE merupakan sebuah kelompok yang beranggotakan tiga mahasiswa program studi Teknik Informatika Institut Teknologi Bandung angkatan 2019.
+                Kelompok ini dibentuk dalam rangka pengerjaan Tugas Besar 2 mata kuliah IF2123 Aljabar Linear dan Geometri.
+                Adapun susunan anggota dari kelompok ABCDE adalah sebagai berikut (diurutkan berdasarkan NIM terkecil) :
+            </p>
+            <p style="padding: 35px;"></p>
+            <ol class="list">
+                <li>Nama    : Thomas Ferdinand Martin</li>
+                <p>NIM  : 13519099</p>
+                <li>Nama    : Azmi Muhammad Syazwana</li>
+                <p>NIM  : 13519151</p>
+                <li>Nama    : Muhammad Rayhan Ravianda</li>
+                <p>NIM  : 13519201</p>
+            </ol>
+        </div>
+        <p style="padding: 40px;"></p>
+      </div> 
+    </body>
+<footer>
+    <p>©2020 by ABCDE</p>
+</footer>
+</html>
