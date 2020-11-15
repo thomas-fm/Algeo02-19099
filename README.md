@@ -4,42 +4,46 @@
 
 ## Setup
 
-* Pastikan sudah terinstall python dan pip
+### Pastikan sudah terinstall python dan pip
+Cek versi dari python dan pip
 ```bash
 python --version
 pip --version
 ```
+Apabila belum terinstall maka install terlebih dahulu python dan pip
+Visit https://www.python.org/downloads/
+Visit https://pip.pypa.io/en/stable/installing/
 
-* Clone repository ini
-```bash
-git clone https://github.com/thomas-fm/Algeo02-19099.git
-```
-
-* Install virtual environment
+### Install virtual environment
 ```bash
 pip install virtualenv
 ```
 
-* Masuk ke folder src dan buat virtual environment baru
+### Clone repository
+```bash
+git clone https://github.com/thomas-fm/Algeo02-19099.git
+```
+
+### Masuk ke folder src dan buat virtual environment baru
 ```bash
 cd src
 ```
-Pastikan sudah di /src
+Pastikan sudah di /src/
 ```bash
 virtualenv env
 ```
 
-* Aktifkan virtual environment
-MacOS / Linux
+### Aktifkan virtual environment
+* MacOS / Linux
 ```bash
 source env/bin/activate
 ```
-Windows
+* Windows
 ```bash
 env\Scripts\activate
 ```
 
-* Lalu jalankan web
+### Lalu jalankan web
 ```bash
 flask run
 ```
