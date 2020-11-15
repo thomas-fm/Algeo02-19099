@@ -117,9 +117,7 @@ def firstSentences(filename):
 
   # TIPE HTML
   else:
-    text = parsefile.htmlParser(filename)
-    text = text.split('.')[0]
-    return text
+    return parsefile.htmlFirst(filename)
   
 """ Mengubah array yg disimpan ssebagai string di csv, kebentuk integer """
 def stringToInt(array):
