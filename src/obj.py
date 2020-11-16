@@ -110,7 +110,7 @@ class Query:
         if (vektor_q[j] == self.vektor_query[i]):
           self.count_query[i] += 1
     
-    print(self.vektor_query)
+    #print(self.vektor_query)
   # Mencari jumlah kemunculan query pada tiap dokumen
   def countQuery(self, dfdatabase):
     self.count_words_query = [0 for i in range(len(dfdatabase))]

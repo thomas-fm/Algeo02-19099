@@ -108,12 +108,16 @@ table {
   border: 1px solid black;
   text-align: left;
   border-radius: 8px;
-  padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left:auto;
-  margin-right:auto;"
+  margin-right:auto;
+}
+
+/* panjang table style */
+.pjgtabel {
+  width: 70%;
 }
 
 /* footer sytyle */
@@ -141,43 +145,38 @@ footer {
         <input type="text" placeholder="Search.." name="text">
         <button type="submit">Pergi</button>
       </form>
-      <!-- Tabel ranking -->
-      <p style="padding: 15px;"></p>
-      <div class="table">
-      <table class="zui-table">
-        <thead>
-          <tr>
-            <th colspan="2">Hasil pencarian</th>
-          </tr>
-        </thead>
-        {% for data in data %}
-        <tbody>
-          <tr>
-            <td colspan="2" ><a href="{{ url_for('static', filename='docs/' + data.name) }}" target="_blank">{{data.title}}</a></td>
-          </tr>
-          <tr>
-            <td>Ini kalimat pertama</td>
-            <td>{{data.first_sentence}}</td>      
-          </tr>
-          <tr>
-            <td>Tingkat kemiripan</td>
-            <td>{{data.cos_sim}} %</td>    
-          </tr>
-          <tr>
-            <td>Jumlah term</td>
-            <td>{{data.count_words}}</td>  
-          </tr>
-        </tbody>
-            <br>
-            <br>
-          {% endfor %}
-        </table>
-        <br>
-        <br>
-      </div>
     </div> 
+    <!-- Tabel ranking -->
+    <p style="padding: 20px;"></p>
+    <p class="center" style="font-size: 30px;">Hasil Pencarian</p>
+    <div class="table">
+    {% for data in data %}
+    <table class="zui-table pjgtabel">
+      <tbody>
+        <tr>
+          <td colspan="2" ><a href="{{ url_for('static', filename='docs/' + data.name) }}" target="_blank">{{data.title}}</a></td>
+        </tr>
+        <tr>
+          <td>Jumlah term</td>
+          <td>{{data.count_words}}</td>  
+        </tr>
+        <tr>
+          <td>Tingkat kemiripan</td>
+          <td>{{data.cos_sim}} %</td>    
+        </tr>
+        <tr>
+          <td>{{data.first_sentence}}.</td>      
+        </tr>
+      </tbody>
+          <br>
+          <br>
+      </table>
+      {% endfor %}
+      <br>
+      <br>
+    </div>
     <!-- Tabel jumlah term -->
-    <div class="table-responsive">
+    <div class="table-responsive" style="width: 70%; margin-left:auto; margin-right:auto;">
       <table class="table">
         <tr>
         {% for col in column_names %}
@@ -193,6 +192,7 @@ footer {
         {% endfor %}
     </table>
     </div>
+    <p style="padding: 20px;"></p>
 </body>
 <footer>
     <p>©2020 by ABCDE</p>

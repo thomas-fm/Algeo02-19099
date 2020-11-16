@@ -150,8 +150,8 @@ def proses_file():
         dfQTermS = obj.CustomDf(dfQTerm)
         dfQTermS.save(QTERM_PATH)
         # Apabila term kosong
-        print(dfQTerm)
-        print(len(dfQTerm.index))
+        #print(dfQTerm)
+        #print(len(dfQTerm.index))
 
         # Apabila cos_sim kosong
         if (len(dict_dfQ)==0):
