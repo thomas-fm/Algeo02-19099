@@ -4,7 +4,7 @@
 ## Anggota Kelompok
 Thomas Ferdinand Martin - 13519099 \
 Azmi Muhammad Syazwana - 13519151 \
-Muhammad Rayhan Ravianda - 13519201 \
+Muhammad Rayhan Ravianda - 13519201 
 
 ## Setup
 
