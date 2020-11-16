@@ -9,6 +9,11 @@ Cek versi dari python dan pip
 python --version
 pip --version
 ```
+atau
+```bash
+python3 --version
+pip3 --version
+```
 Apabila belum terinstall maka install terlebih dahulu python dan pip \
 Visit https://www.python.org/downloads/ \
 Visit https://pip.pypa.io/en/stable/installing/ 
@@ -16,6 +21,10 @@ Visit https://pip.pypa.io/en/stable/installing/
 ### Install virtual environment
 ```bash
 pip install virtualenv
+```
+atau
+```bash
+pip3 install virtualenv
 ```
 
 ### Clone repository
@@ -30,13 +39,13 @@ cd /path/to/repo/Algeo02-19099/src
 ```
 Pastikan sudah di /src/ lalu buat env
 ```bash
-$ path/to/repo/Algeo02-19099/src>virtualenv env
+$ path/to/repo/Algeo02-19099/src> virtualenv env
 ```
 
 ### Aktifkan virtual environment
 * MacOS / Linux
 ```bash
-$ path/to/repo/Algeo02-19099/src>source env/bin/activate
+$ path/to/repo/Algeo02-19099/src> source env/bin/activate
 ```
 * Windows
 ```bash
@@ -50,13 +59,13 @@ $ (env) path/to/repo/Algeo02-19099/src
 ## Install library
 Install library-library yang dibutuhkan
 ```bash
-$ (env) path/to/repo/Algeo02-19099/src>pip install -r requirement.txt
+$ (env) path/to/repo/Algeo02-19099/src> pip install -r requirement.txt
 ```
 
 ### Jalankan flask
 Menjalankan web secara lokal
 ```bash
-$ (env) path/to/repo/Algeo02-19099/src>flask run
+$ (env) path/to/repo/Algeo02-19099/src> flask run
 ```
 ### Buka web
 Biasanya web akan terbuka pada port 5000, buka link berikut
