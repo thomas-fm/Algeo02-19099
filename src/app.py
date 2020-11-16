@@ -34,6 +34,8 @@ def allowed_file(filename):
 """ INDEX ROUTE """
 @app.route('/')
 def index():
+    global Filenames
+    Filenames = []
     return render_template('index.html')
 
 """ UPLOADER ROUTE """

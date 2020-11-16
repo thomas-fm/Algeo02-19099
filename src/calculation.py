@@ -63,6 +63,8 @@ def distanceVektor(X):
 
 """ Perhitungan besar kemiripan menggunakan cosine similarity """
 def cosineSimilarity(Q, D):
+  if (distanceVektor(Q) == 0 or distanceVektor(D)==0):
+    return None
   cos = float(dotProduct(Q, D)) / float(distanceVektor(Q) * distanceVektor(D))
 
   return cos*100

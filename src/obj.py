@@ -145,7 +145,11 @@ class Query:
       arrQ = [0 for i in range (len(self.vektor_query))]
 
       # Hitung similarity dan append ke dfQ
-      cos_sim = round(calculation.cosineSimilarity(self.count_words_query, arr), 2)
+      if (calculation.cosineSimilarity(self.count_words_query, arr) != None):
+        cos_sim = round(calculation.cosineSimilarity(self.count_words_query, arr), 2)
+      else:
+        cos_sim = calculation.cosineSimilarity(self.count_words_query, arr)
+      
       row['cos_sim'] = cos_sim
       
       array_cos.append(cos_sim)
@@ -168,7 +172,7 @@ class Query:
 
     # Kalau cos_sim = 0 maka tidak ditampilkan ke layar
     for index, row in dF_sort.iterrows():
-      if row['cos_sim'] == 0:
+      if row['cos_sim'] == 0 or row['cos_sim'] == None:
         dF_sort.drop(index, inplace=True)
         continue
       for array in QTerm:
