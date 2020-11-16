@@ -1,6 +1,11 @@
 # ABCDE SEARCH-ENGINE
 > Search engine berbasis web memanfaatkan aplikasi dot product
 
+## Anggota Kelompok
+Thomas Ferdinand Martin - 13519099 \
+Azmi Muhammad Syazwana - 13519151 \
+Muhammad Rayhan Ravianda - 13519201 \
+
 ## Setup
 
 ### Pastikan sudah terinstall python dan pip
